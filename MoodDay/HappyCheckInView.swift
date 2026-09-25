@@ -41,7 +41,7 @@ struct HappyCheckInView: View {
                         Color.clear.frame(height: 60)
                         if selected {
                             Button("Next") { onContinue(mood) }
-                                .buttonStyle(MoodActionStyle(primary: true, fontSize: 24))
+                                .buttonStyle(MoodActionStyle(primary: true, fontSize: 24, primaryColor: .black))
                                 .accessibilityHint("Continue with your selected mood")
                                 .transition(.opacity)
                         }
@@ -133,6 +133,7 @@ struct HappyCheckInView: View {
 struct MoodActionStyle: ButtonStyle {
     let primary: Bool
     var fontSize: CGFloat = 16
+    var primaryColor: Color = MoodPalette.ink
     @Environment(\.isEnabled) private var isEnabled
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
@@ -142,7 +143,7 @@ struct MoodActionStyle: ButtonStyle {
             .frame(maxWidth: .infinity)
             .frame(height: 60)
             .foregroundStyle(primary ? MoodPalette.cream : MoodPalette.muted)
-            .background(primary ? MoodPalette.ink : .clear, in: RoundedRectangle(cornerRadius: 8))
+            .background(primary ? primaryColor : .clear, in: RoundedRectangle(cornerRadius: 8))
             .overlay {
                 if !primary {
                     RoundedRectangle(cornerRadius: 8).strokeBorder(MoodPalette.line, lineWidth: 1.5)

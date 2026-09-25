@@ -46,12 +46,6 @@ struct FeelyWelcomeView: View {
                         Text("Check in")
                             .font(.custom("Caveat-Regular", size: 24, relativeTo: .body).weight(.semibold))
                             .frame(maxWidth: .infinity, minHeight: 60)
-                            .overlay(alignment: .trailing) {
-                                Image(systemName: "arrow.right")
-                                    .font(.system(size: 18))
-                                    .padding(.trailing, 22)
-                                    .accessibilityHidden(true)
-                            }
                             .foregroundStyle(.white)
                             .background(.black, in: RoundedRectangle(cornerRadius: 8))
                     }
