@@ -1,0 +1,40 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+        00000000000000000000006A = { isa = PBXBuildFile; fileRef = 0000000000000000000000CE; };
+        0000000000000000000000CE = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelyWelcomeView.swift; sourceTree = "<group>"; };
+        00000000000000000000006B = { isa = PBXBuildFile; fileRef = 0000000000000000000000CF; };
+        0000000000000000000000CF = { isa = PBXFileReference; lastKnownFileType = folder; path = WelcomeMedia; sourceTree = "<group>"; };
+        000000000000000000000069 = { isa = PBXBuildFile; fileRef = 0000000000000000000000CD; };
+        0000000000000000000000CD = { isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		000000000000000000000068 = { isa = PBXBuildFile; fileRef = 0000000000000000000000CC; };
+		0000000000000000000000CC = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyCharacterView.swift; sourceTree = "<group>"; };
+		000000000000000000000064 = { isa = PBXBuildFile; fileRef = 0000000000000000000000C8; };
+		0000000000000000000000C8 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDayApp.swift; sourceTree = "<group>"; };
+		000000000000000000000065 = { isa = PBXBuildFile; fileRef = 0000000000000000000000C9; };
+		0000000000000000000000C9 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyCheckInView.swift; sourceTree = "<group>"; };
+		000000000000000000000066 = { isa = PBXBuildFile; fileRef = 0000000000000000000000CA; };
+		0000000000000000000000CA = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappySceneView.swift; sourceTree = "<group>"; };
+		000000000000000000000067 = { isa = PBXBuildFile; fileRef = 0000000000000000000000CB; };
+		0000000000000000000000CB = { isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0000000000000000000000D2 = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00000000000000000000012C = { isa = PBXGroup; children = (00000000000000000000012D, 00000000000000000000012E,); sourceTree = "<group>"; };
+		00000000000000000000012D = { isa = PBXGroup; children = (0000000000000000000000C8, 0000000000000000000000C9, 0000000000000000000000CA, 0000000000000000000000CB, 0000000000000000000000CC, 0000000000000000000000CD, 0000000000000000000000CE, 0000000000000000000000CF,); path = MoodDay; sourceTree = "<group>"; };
+		00000000000000000000012E = { isa = PBXGroup; children = (0000000000000000000000D2,); name = Products; sourceTree = "<group>"; };
+		000000000000000000000190 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000064, 000000000000000000000065, 000000000000000000000066, 000000000000000000000068, 00000000000000000000006A,); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000191 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000067, 000000000000000000000069, 00000000000000000000006B,); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000192 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		0000000000000000000001F4 = { isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000259; buildPhases = (000000000000000000000190, 000000000000000000000192, 000000000000000000000191,); buildRules = (); dependencies = (); name = MoodDay; productName = MoodDay; productReference = 0000000000000000000000D2; productType = "com.apple.product-type.application"; };
+		000000000000000000000001 = { isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = YES; LastUpgradeCheck = 2700; TargetAttributes = { 0000000000000000000001F4 = { CreatedOnToolsVersion = 27.0; }; }; }; buildConfigurationList = 000000000000000000000258; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base,); mainGroup = 00000000000000000000012C; productRefGroup = 00000000000000000000012E; projectDirPath = ""; projectRoot = ""; targets = (0000000000000000000001F4,); };
+		000000000000000000000262 = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; SDKROOT = iphoneos; IPHONEOS_DEPLOYMENT_TARGET = 26.0; SWIFT_VERSION = 6.0; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; }; name = Debug; };
+		000000000000000000000263 = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; SDKROOT = iphoneos; IPHONEOS_DEPLOYMENT_TARGET = 26.0; SWIFT_VERSION = 6.0; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; }; name = Release; };
+		000000000000000000000264 = { isa = XCBuildConfiguration; buildSettings = { CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = Feely; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait; "INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad" = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"; MARKETING_VERSION = 0.1.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.MoodDay; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_STRICT_CONCURRENCY = complete; TARGETED_DEVICE_FAMILY = "1,2"; ENABLE_PREVIEWS = YES; }; name = Debug; };
+		000000000000000000000265 = { isa = XCBuildConfiguration; buildSettings = { CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = Feely; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait; "INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad" = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"; MARKETING_VERSION = 0.1.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.MoodDay; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor; SWIFT_STRICT_CONCURRENCY = complete; TARGETED_DEVICE_FAMILY = "1,2"; ENABLE_PREVIEWS = YES; }; name = Release; };
+		000000000000000000000258 = { isa = XCConfigurationList; buildConfigurations = (000000000000000000000262, 000000000000000000000263,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		000000000000000000000259 = { isa = XCConfigurationList; buildConfigurations = (000000000000000000000264, 000000000000000000000265,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+	};
+	rootObject = 000000000000000000000001;
+}

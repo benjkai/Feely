@@ -1,0 +1,20 @@
+@font-face{font-family:'Caveat';src:url('../MoodDay/Fonts/Caveat.ttf') format('truetype');font-style:normal;font-weight:400 700;font-display:swap}
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#000;background:#111;font-synthesis:none}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;display:grid;place-items:center}
+.welcome{position:relative;isolation:isolate;width:402px;height:852px;max-height:calc(100svh - 48px);overflow:hidden;border-radius:36px;background:#fff;box-shadow:0 24px 80px #0005}
+.welcome-video{position:absolute;z-index:-3;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;transform:scale(1.24)}
+.welcome-shade{position:absolute;z-index:-2;inset:0;background:linear-gradient(180deg,transparent 48%,rgba(255,255,255,.08) 58%,rgba(255,255,255,.90) 82%,#fff 100%)}
+.motion-control{position:absolute;top:max(18px,env(safe-area-inset-top));right:18px;width:40px;height:40px;display:grid;place-items:center;border:1px solid #ffffff50;border-radius:50%;background:#0004;color:white;cursor:pointer;backdrop-filter:blur(8px)}
+.motion-control svg{width:18px;height:18px}
+.welcome-copy{position:absolute;bottom:max(32px,calc(env(safe-area-inset-bottom) + 20px));left:24px;right:24px;text-align:center}
+h1{font-family:'Caveat',cursive;font-size:76px;line-height:1;font-weight:600;letter-spacing:0;margin:0 0 12px;text-shadow:none}
+p{font-size:14px;line-height:1.5;margin:0 0 28px;color:#000}
+strong{font-weight:700}
+.check-in{min-height:60px;border-radius:8px;display:flex;align-items:center;justify-content:center;position:relative;padding:14px 56px;background:#000;color:white;text-decoration:none;font-family:'Caveat',cursive;font-size:24px;font-weight:600;line-height:1.2;transition:transform .2s}
+.check-in svg{width:21px;height:21px;position:absolute;right:22px}
+.check-in:hover{transform:translateY(-2px)}
+:focus-visible{outline:3px solid #ffcd31;outline-offset:4px}
+@media(max-width:760px){body{display:block;background:#fff}.welcome{width:100%;height:100svh;min-height:500px;max-height:none;border-radius:0;box-shadow:none}}
+@media(max-height:700px){.welcome-copy{bottom:max(20px,env(safe-area-inset-bottom))}h1{font-size:60px;margin-bottom:8px}p{margin-bottom:20px}.check-in{min-height:54px}}
+@media(prefers-reduced-motion:reduce){.check-in{transition:none}.check-in:hover{transform:none}}

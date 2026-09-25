@@ -1,0 +1,13 @@
+/* Keep the app frame stationary while its contents change screens. */
+@view-transition{navigation:auto}
+:root{view-transition-name:none}
+.welcome,.phone-only .phone{view-transition-name:app-screen}
+::view-transition-group(app-screen){animation-duration:460ms;animation-timing-function:cubic-bezier(.22,1,.36,1);overflow:hidden;border-radius:36px}
+::view-transition-old(app-screen){animation:screen-out 300ms cubic-bezier(.4,0,.2,1) both;mix-blend-mode:normal}
+::view-transition-new(app-screen){animation:screen-in 460ms cubic-bezier(.22,1,.36,1) both;mix-blend-mode:normal}
+@keyframes screen-out{to{opacity:0;transform:translateY(-12px) scale(.985)}}
+@keyframes screen-in{from{opacity:0;transform:translateY(24px) scale(1.015)}to{opacity:1;transform:none}}
+.screen-enter .phone{animation:screen-in 460ms cubic-bezier(.22,1,.36,1) both}
+.screen-leave .welcome{animation:screen-out 240ms ease both;pointer-events:none}
+@media(max-width:760px){::view-transition-group(app-screen){border-radius:0}}
+@media(prefers-reduced-motion:reduce){::view-transition-group(app-screen),::view-transition-old(app-screen),::view-transition-new(app-screen){animation:none!important}.screen-enter .phone,.screen-leave .welcome{animation:none!important}}

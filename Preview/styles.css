@@ -1,0 +1,128 @@
+:root{--cream:#fff8e8;--ink:#302e24;--muted:#8b795b;--gold:#a78541;--line:#d8c9a3;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--serif:Georgia,"Times New Roman",serif;color:var(--ink);font-family:var(--sans);font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#eae9df;display:flex;align-items:center;justify-content:center;gap:110px;padding:38px 30px;background-image:radial-gradient(ellipse at 65% 35%,#f5f3e9 0,transparent 70%)}button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}button:focus-visible{outline:3px solid #a78541;outline-offset:6px}button:disabled{cursor:default}button{touch-action:manipulation}.preview-note{width:310px;align-self:stretch;display:flex;flex-direction:column;justify-content:center;position:relative}.wordmark{position:absolute;top:30px;font-family:var(--serif);font-size:28px;letter-spacing:-1px}.brand-sun{font-size:34px;color:#9d854b;margin-right:8px;vertical-align:-2px}.eyebrow{font-size:10px;letter-spacing:2.7px;color:#8b8168;font-weight:600}.intro h2{font-family:var(--serif);font-weight:400;letter-spacing:-1.8px;font-size:49px;line-height:1.13;margin:21px 0}.intro p{font-size:14px;line-height:1.8;color:#7b7868}.preview-tools{margin-top:68px}.preview-label{font-size:9px;letter-spacing:1.6px;display:block;color:#7c7968}.preview-label i{display:inline-block;width:6px;height:6px;background:#8d9c6e;border-radius:100%;margin-right:8px}#motion-toggle{display:flex;gap:10px;align-items:center;background:none;border:1px solid #cfcdbb;border-radius:30px;padding:11px 17px;margin-top:19px;color:#555646;font-size:12px;min-height:44px}.preview-tools p{font-size:11px;color:#807c6b;margin-top:16px}.desktop-footnote{position:fixed;bottom:20px;left:35px;color:#8b8979;font-size:9px;letter-spacing:2.4px}
+.phone{width:402px;height:852px;flex-shrink:0;position:relative;overflow:hidden;background:var(--cream);border:7px solid #f9f7ed;border-radius:49px;box-shadow:0 0 0 1px #d6d4c6,0 32px 60px -20px #4c4d3440,0 5px 8px #77745c13;display:flex;flex-direction:column;isolation:isolate}.statusbar{height:47px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font-size:14px;font-weight:600}.status-icons{display:flex;align-items:center;gap:5px}.status-icons svg{width:17px;height:13px}.status-icons svg:last-child{width:24px}.checkin-header{z-index:3;text-align:center;padding:13px 18px 0;pointer-events:none}.steps{display:flex;justify-content:center;gap:7px;margin-bottom:19px}.steps i{width:6px;height:6px;border-radius:50%;background:#d9c9a3}.steps i.current{background:var(--ink)}.step-label{font-size:10px;letter-spacing:2.5px;color:var(--gold);font-weight:600;margin:0 0 17px}.checkin-header h1{font-family:var(--serif);font-size:36px;line-height:1.12;font-weight:500;letter-spacing:-1.2px;margin:0}.subtitle{font-family:var(--serif);font-size:16px;color:var(--muted);margin:16px 0 0}
+.mood-scene{position:relative;flex:1;min-height:280px;margin-top:1px;isolation:isolate}.landscape{position:absolute;inset:-26px -16px -46px;background:url('../MoodDay/Assets.xcassets/HappyMeadow.imageset/happy-meadow.png') center bottom/cover no-repeat;mask-image:linear-gradient(transparent 0,#000 17%,#000 79%,transparent 100%);animation:meadow-breathe 12s ease-in-out infinite alternate;z-index:-2}.sun{position:absolute;right:14%;top:8%;width:53px;height:53px;border-radius:100%;background:#f8d985;box-shadow:0 0 30px 13px #f8d77838,0 0 70px 28px #f4d78a20;animation:sun-glow 5s ease-in-out infinite;z-index:-1}.sun:before,.sun:after{content:"";position:absolute;inset:-12px;border:1px solid #e4bf6344;border-radius:50%}.sun:after{inset:-25px;border-color:#e4bf6320}.sun-core{height:100%;border-radius:100%;background:radial-gradient(circle at 35% 30%,#ffe9aa,#f2ce77);box-shadow:inset -3px -4px 8px #d6ab4d15}.cloud{position:absolute;width:82px;height:22px;border-radius:30px;background:linear-gradient(#fffefa,#f5efdfff);filter:drop-shadow(0 6px 6px #a9945420);z-index:-1}.cloud i{position:absolute;border-radius:100%;background:#fffdf6;bottom:5px}.cloud i:nth-child(1){width:32px;height:30px;left:10px}.cloud i:nth-child(2){width:39px;height:38px;left:27px}.cloud i:nth-child(3){width:27px;height:24px;left:52px}.cloud-one{top:20%;left:6%;transform:scale(.75);animation:cloud-drift 17s ease-in-out infinite alternate}.cloud-two{top:36%;right:0%;transform:scale(.5);opacity:.7;animation:cloud-drift-two 22s ease-in-out infinite alternate}.avatar-button{position:absolute;top:6%;left:-1%;width:102%;height:99%;border:0;background:none;padding:0;z-index:3;border-radius:45%}.avatar-jump{display:block;width:100%;height:100%;transform-origin:50% 80%}.avatar{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 13px 8px #6b62401e);animation:avatar-float 4.4s ease-in-out infinite;user-select:none}.avatar-button:hover .avatar{filter:drop-shadow(0 14px 9px #6b624035)}.avatar-shadow{position:absolute;width:124px;height:19px;border-radius:50%;background:#635b4630;filter:blur(7px);bottom:6%;left:calc(50% - 62px);animation:shadow-breathe 4.4s ease-in-out infinite}.avatar-button.bounce .avatar-jump{animation:joy-hop .9s cubic-bezier(.22,.75,.3,1)}.motes,.celebration{position:absolute;inset:0;pointer-events:none;z-index:4;overflow:hidden}.mote{position:absolute;width:4px;height:4px;border-radius:100% 0 100% 100%;background:#fffef1;box-shadow:0 0 5px #fffcdf;animation:petal-drift var(--duration) ease-in-out infinite;animation-delay:var(--delay);opacity:0}.mote:nth-child(3n){background:#edc773;width:5px;height:3px}.spark{position:absolute;color:#fff9d2;left:50%;top:48%;font-size:17px;animation:spark-burst 900ms ease-out forwards;transform:translate(-50%,-50%)}.butterfly{position:absolute;z-index:2;width:18px;height:16px;animation:butterfly-drift 8s ease-in-out infinite}.butterfly i{position:absolute;top:0;width:9px;height:13px;background:#e5b34d;border-radius:80% 40% 60% 30%;transform-origin:right center;animation:wing .45s ease-in-out infinite alternate}.butterfly i+i{left:9px;transform-origin:left center;border-radius:40% 80% 30% 60%;animation-delay:-.2s;background:#f3cc71}.butterfly-one{top:43%;left:9%;transform:rotate(-20deg)}.butterfly-two{top:65%;right:9%;scale:.7;animation-delay:-4s}.flower{position:absolute;bottom:0;width:35px;height:67px;z-index:5;transform-origin:center bottom;animation:flower-sway 4s ease-in-out infinite alternate;filter:drop-shadow(1px 3px 2px #6b624015)}.flower-one{left:9%}.flower-two{right:8%;width:28px;height:52px;animation-delay:-2s}
+.mood-caption{text-align:center;z-index:5;position:relative;padding:24px 20px 0;min-height:125px;pointer-events:none}.mood-label{pointer-events:auto;font-family:var(--serif);font-size:29px;line-height:1.3;letter-spacing:-.5px;border:0;background:none;color:var(--ink);display:inline-flex;align-items:center;gap:11px;min-height:44px;padding:0 12px}.mood-dot{height:8px;width:8px;border-radius:50%;background:#dfb459;box-shadow:0 0 0 4px #f2dca448}.selected-check{font-family:var(--sans);font-size:12px;border-radius:100%;background:#e8eddb;color:#5f7046;width:19px;height:19px;display:none;align-items:center;justify-content:center}.selected .selected-check{display:flex}.mood-caption p{font-family:var(--serif);font-size:14px;color:#8a7959;margin:6px 0 0}.selection-hint{display:block;font-size:9px;letter-spacing:.5px;color:#887e65;margin-top:11px}.selected .selection-hint{color:#697b4c}.actions{display:flex;gap:14px;padding:19px 23px 28px;z-index:6}.actions button{height:51px;border-radius:15px;font-family:var(--serif);font-size:19px;font-weight:600;flex:1;transition:opacity .2s,background .2s,transform .2s}.actions button:active:not(:disabled){transform:scale(.97)}.back-button{background:transparent;border:1.5px solid #cbbb93;color:#796845}.back-button:disabled{opacity:.5}.next-button{background:var(--ink);color:var(--cream);border:1px solid var(--ink);box-shadow:0 5px 11px #38332420;display:flex;align-items:center;justify-content:center;gap:22px}.next-button:disabled{opacity:.55;box-shadow:none}.home-indicator{width:117px;height:4px;position:absolute;bottom:7px;left:calc(50% - 58.5px);background:#302e24;border-radius:3px;z-index:10}
+dialog{position:absolute;inset:auto 0 0;width:100%;max-width:none;max-height:85%;margin:0;padding:15px 27px 38px;text-align:center;color:var(--ink);border:0;border-radius:28px 28px 0 0;background:var(--cream);box-shadow:0 -10px 40px #403a2520}dialog::backdrop{background:#302e2450;backdrop-filter:blur(5px)}.sheet-handle{width:35px;height:4px;border-radius:3px;background:#d7cdb4;margin:0 auto 24px}.sheet-sun{display:block;font-size:43px;color:#cca043;margin-bottom:22px}dialog h2{font:500 28px/1.2 var(--serif);letter-spacing:-.6px}dialog p:not(.step-label){font:16px/1.6 var(--serif);color:var(--muted)}dialog button{width:100%;border:0;border-radius:15px;background:var(--ink);color:var(--cream);padding:17px;margin-top:18px;font-size:14px}dialog button span{float:right}
+@keyframes avatar-float{0%,100%{transform:translateY(4px) rotate(-3deg) scale(.99)}50%{transform:translateY(-9px) rotate(2deg) scale(1.015)}}@keyframes joy-hop{0%,100%{transform:translateY(0) scale(1)}18%{transform:translateY(5px) scale(1.04,.95)}48%{transform:translateY(-32px) rotate(-5deg) scale(.99,1.04)}72%{transform:translateY(1px) scale(1.02,.97)}}@keyframes shadow-breathe{0%,100%{transform:scaleX(1.04);opacity:.8}50%{transform:scaleX(.85);opacity:.5}}@keyframes meadow-breathe{from{transform:scale(1.02) translateX(-2px)}to{transform:scale(1.055) translateX(2px)}}@keyframes sun-glow{0%,100%{transform:scale(.96);opacity:.85}50%{transform:scale(1.04);opacity:1}}@keyframes cloud-drift{from{translate:-12px 0}to{translate:28px 4px}}@keyframes cloud-drift-two{from{translate:12px 0}to{translate:-23px -5px}}@keyframes petal-drift{0%{opacity:0;transform:translate(0,22px) rotate(0)}20%,70%{opacity:.8}100%{opacity:0;transform:translate(25px,-66px) rotate(130deg)}}@keyframes flower-sway{from{transform:rotate(-7deg)}to{transform:rotate(8deg)}}@keyframes butterfly-drift{0%,100%{translate:0 0;rotate:-12deg}50%{translate:14px -20px;rotate:13deg}}@keyframes wing{from{transform:scaleX(.35) rotate(-15deg)}to{transform:scaleX(1) rotate(10deg)}}@keyframes spark-burst{0%{opacity:0;translate:0 0;scale:.5}15%{opacity:1}100%{opacity:0;translate:var(--x) var(--y);scale:1.2;rotate:35deg}}
+.paused *,.paused *::before,.paused *::after{animation-play-state:paused!important}.paused .avatar-button.bounce .avatar-jump{animation:none}.paused .spark{display:none}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.mote,.spark{display:none}}
+@media(min-width:761px) and (max-height:900px){body{padding:22px 25px;gap:80px}.phone{height:calc(100dvh - 44px);min-height:700px;width:370px}.statusbar{height:39px}.checkin-header{padding-top:7px}.steps{margin-bottom:15px}.step-label{margin-bottom:14px}.checkin-header h1{font-size:33px}.subtitle{margin-top:12px}.mood-caption{padding-top:19px;min-height:112px}.actions{padding-bottom:24px;padding-top:14px}.mood-scene{min-height:255px}.intro h2{font-size:45px}}
+@media(max-width:760px){body{padding:0;background:var(--cream);display:block}.preview-note,.desktop-footnote{display:none}.phone{border:0;border-radius:0;box-shadow:none;width:100%;height:100svh;min-height:710px;max-width:480px;margin:0 auto}.statusbar{padding-top:env(safe-area-inset-top);height:48px}.checkin-header{padding-top:16px}.mood-scene{max-height:470px}.actions{padding-bottom:max(31px,env(safe-area-inset-bottom))}.home-indicator{bottom:9px}dialog{position:fixed;max-width:480px;margin-left:auto;margin-right:auto}}@media(max-width:760px) and (max-height:760px){.phone{min-height:660px}.statusbar{height:34px}.checkin-header{padding-top:10px}.steps{margin-bottom:12px}.step-label{margin-bottom:12px}.checkin-header h1{font-size:32px}.subtitle{margin-top:10px}.mood-scene{min-height:250px}.mood-caption{padding-top:14px;min-height:109px}.actions{padding-top:12px;padding-bottom:25px}}
+
+/* Anchor the prototype confirmation to the phone, including desktop review. */
+dialog{position:fixed;inset:auto;left:var(--sheet-left,0);bottom:var(--sheet-bottom,0);width:var(--sheet-width,100%);margin:0;border-radius:28px 28px 36px 36px}
+@media(max-width:760px){dialog{border-radius:28px 28px 0 0}}
+
+/* Original image with a shared blinking-eye overlay. */
+#happy-character{display:block;width:100%;height:100%;filter:drop-shadow(0 7px 5px #6b624018)}
+.avatar-button{top:3%;height:105%}
+.avatar-shadow{animation:none;bottom:1%;opacity:.55}
+
+.motes{z-index:2}
+
+/* Original proportions, gentle floating motion and tap-to-hop reaction. */
+.avatar-button{top:6%;height:99%}
+
+#happy-character{animation:avatar-float 4.4s ease-in-out infinite}
+.avatar-shadow{animation:shadow-breathe 4.4s ease-in-out infinite;bottom:6%}
+
+/* Whole-screen selection, with one clear continuation action. */
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
+.checkin-header{padding-bottom:20px}
+.mood-caption{min-height:80px;padding-top:25px}
+.actions{min-height:98px}
+.next-button[hidden]{display:none!important}
+.phone{transition:background-color .35s ease,box-shadow .35s ease}
+.phone::after{content:"";position:absolute;inset:0;border:2px solid transparent;border-radius:inherit;pointer-events:none;z-index:11;transition:border-color .35s ease,box-shadow .35s ease,background-color .35s ease}
+.phone.selected{background-color:#fff1ca}
+.phone.selected::after{border-color:#caaa62;box-shadow:inset 0 0 42px 5px #e8bf5140;background-color:#eec35a0a}
+@media(max-width:760px){.phone::after{border-radius:0}}
+
+@font-face{font-family:'Anonymous Pro';src:url('../MoodDay/Fonts/AnonymousPro-Bold.ttf') format('truetype');font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:'Caveat';src:url('../MoodDay/Fonts/Caveat.ttf') format('truetype');font-style:normal;font-weight:400 700;font-display:swap}
+@font-face{font-family:'Figma Hand';src:local('Figma Hand'),local('FigmaHand-Regular');font-style:normal;font-weight:400;font-display:swap}
+.checkin-header .step-label{font-family:'Anonymous Pro',monospace;font-size:11px;font-weight:700;letter-spacing:2.5px}
+.checkin-header h1{font-family:'Caveat',cursive;font-weight:600;font-size:42px;line-height:1.04;letter-spacing:0}
+.checkin-header{padding-bottom:0}
+.mood-caption{min-height:0;padding:12px 20px 8px;flex-shrink:0}
+.mood-label{font-family:'Figma Hand','Caveat',cursive;font-weight:400;font-size:32px;letter-spacing:0;line-height:1.2}
+.mood-caption .mood-description{font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--muted);margin:3px 0 0}
+@media(min-width:761px) and (max-height:900px){.checkin-header h1{font-size:38px}.mood-caption{padding-top:8px;padding-bottom:6px}}
+@media(max-width:760px) and (max-height:760px){.checkin-header h1{font-size:36px}.mood-caption{padding-top:6px;padding-bottom:4px}}
+
+/* Shared stage: weather and characters blend without replacing the screen. */
+.phone{transition:background-color .65s ease,box-shadow .65s ease}
+.phone.sad{background:#edf0f3}.phone.sad.selected{background:#dce8f2}
+.phone.sad.selected::after{border-color:#90a9c1;box-shadow:inset 0 0 32px #809eb32b}
+.sad-character{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;animation:avatar-float 4.4s ease-in-out infinite;transition:opacity .65s ease;pointer-events:none}
+#happy-character{transition:opacity .65s ease}.sad #happy-character{opacity:0}.sad .sad-character{opacity:1}
+.avatar-button{translate:var(--drag,0px) 0;transition:translate .65s cubic-bezier(.22,1,.36,1)}
+.dragging .avatar-button{transition:none}
+.landscape{transition:filter .8s ease;translate:calc(var(--drag,0px) * .18) 0}
+.sad .landscape{filter:saturate(.28) brightness(.75) hue-rotate(145deg)}
+.sun,.butterfly,.flower,.motes{transition:opacity .7s ease}.sad .sun,.sad .butterfly,.sad .motes{opacity:0}.sad .flower{opacity:.35;filter:saturate(.2)}
+.sad .cloud{filter:brightness(.75) sepia(.1) hue-rotate(160deg)}
+.rain{position:absolute;inset:0;z-index:6;pointer-events:none;opacity:0;transition:opacity .8s;overflow:hidden;mask-image:linear-gradient(transparent,#000 15%,#000 85%,transparent)}
+.sad .rain{opacity:.65}.rain i{position:absolute;top:-10%;height:18px;width:1px;background:linear-gradient(transparent,#a0bbd1);animation:rain-fall var(--duration) var(--delay) linear infinite}
+@keyframes rain-fall{to{transform:translate(-35px,560px)}}
+@media(prefers-reduced-motion:reduce){.phone,.avatar-button,.sad-character,#happy-character,.landscape,.rain{transition:none}.rain i{animation:none;top:50%}}
+.sad .sun{animation:none;opacity:0}.rain i{width:1.5px;background:linear-gradient(transparent,#6f95b5);height:24px}.sad .rain{opacity:.8}
+
+/* Shared action button treatment across moods, sheets, and preview controls. */
+.actions{margin-top:auto;flex-shrink:0;min-height:111px;padding:19px 23px 32px}
+.actions button,dialog button,#motion-toggle{border-radius:8px;font-family:'Caveat',cursive;font-size:16px;font-weight:600;height:60px;min-height:60px;padding-top:0;padding-bottom:0;line-height:1.2}
+dialog{padding-bottom:32px}
+/* Full-page scenery, without the cloudy top and bottom masks. */
+.phone{isolation:isolate}
+.phone::before{content:"";position:absolute;inset:0;z-index:-1;background:url('../MoodDay/Assets.xcassets/HappyMeadow.imageset/happy-meadow.png') center bottom/cover no-repeat;transition:filter .8s ease;pointer-events:none}
+.phone.sad::before{filter:saturate(.28) brightness(.75) hue-rotate(145deg)}
+.landscape{display:none}
+.actions{background:transparent}
+.sun{box-shadow:none}
+.phone.selected::after{background:transparent;box-shadow:inset 0 0 12px #c7a54a26}
+.phone.sad.selected::after{box-shadow:inset 0 0 12px #809eb326}
+
+.actions .next-button{font-size:24px}
+
+.checkin-header h1{font-size:32px}
+.mood-caption .mood-label{font-size:44px}
+.mood-caption .mood-description{color:var(--ink)}
+
+.checkin-header .steps{margin-bottom:12px}
+.checkin-header h1{font-size:30px;opacity:.75}
+
+.checkin-header h1{font-size:26px;opacity:1}
+.mood-caption{padding-top:36px}
+
+.phone.sad .steps i:not(.current){background:#fff}
+
+/* Selection belongs to the companion, rather than the page frame. */
+.phone.selected::after{display:none}
+.phone.selected{background:var(--cream)}
+.phone.sad.selected{background:#edf0f3}
+.checkin-header{padding-top:32px}
+.phone{--avatar-glow:#ffe7a0}
+.phone.sad{--avatar-glow:#dceeff}
+.selected #happy-character,.selected .sad-character{filter:drop-shadow(0 0 3px #fff8ee) drop-shadow(0 0 15px var(--avatar-glow));animation-name:avatar-selected-float;animation-duration:3s}
+@keyframes avatar-selected-float{0%,100%{transform:translateY(7px) rotate(-4deg) scale(1.01)}50%{transform:translateY(-20px) rotate(3deg) scale(1.035)}}
+@media(prefers-reduced-motion:reduce){.selected #happy-character,.selected .sad-character{animation:none!important}}
+
+
+.phone .neutral-scenery{position:absolute;inset:0;z-index:-1;background:url('../MoodDay/Assets.xcassets/NeutralMeadow.imageset/neutral-meadow.png') center bottom/cover;opacity:0;transition:opacity .8s;pointer-events:none}
+.phone.neutral .neutral-scenery{opacity:1}
+.neutral-character{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;animation:avatar-float 4.4s ease-in-out infinite;transition:opacity .65s;pointer-events:none}
+.neutral #happy-character{opacity:0}.neutral .neutral-character{opacity:1}
+.neutral .sun{animation:none;opacity:0}.neutral .butterfly,.neutral .motes{opacity:0}
+.phone.neutral{--avatar-glow:#e4f3ff}.neutral .steps i:not(.current){background:white}
+.selected .neutral-character{filter:drop-shadow(0 0 3px #fff8ee) drop-shadow(0 0 15px var(--avatar-glow));animation-name:avatar-selected-float;animation-duration:3s}
+@media(prefers-reduced-motion:reduce){.neutral-character{animation:none!important;transition:none}.phone .neutral-scenery{transition:none}}
+
+.mood-caption{display:flex;flex-direction:column;align-items:center;text-align:center}
+.mood-caption .mood-label{justify-content:center;text-align:center;margin-inline:auto}
+.mood-caption .mood-description{width:100%;text-align:center;margin-inline:auto}
+
+/* App-only preview shell. */
+body.phone-only{background:#111;background-image:none;display:grid;place-items:center;min-height:100svh;padding:24px 0;gap:0}
+.phone-only .preview-note,.phone-only .desktop-footnote{display:none}
+.phone-only .phone{width:402px;height:852px;max-height:calc(100svh - 48px);min-height:600px;border:0;border-radius:36px;box-shadow:0 24px 80px #0005;margin:0}
+@media(max-width:760px){body.phone-only{display:block;padding:0;background:var(--cream)}.phone-only .phone{width:100%;max-width:none;height:100svh;max-height:none;min-height:660px;border-radius:0;box-shadow:none}}
