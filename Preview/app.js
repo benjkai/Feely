@@ -9,7 +9,7 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let celebrationTimer;
 let mood = 0, chosen = null, suppressClick = false;
 const names = ['Good', 'Meh', 'Down'];
-const descriptions = ['Inside and out.', 'Taking the day as it comes.', 'A little rain. It’s okay to feel this way.'];
+const descriptions = ['Feeling good inside and out!', 'Taking the day as it comes.', 'A little rain. It’s okay to feel this way.'];
 const scene = document.querySelector('.mood-scene');
 for (let i=0;i<45;i++) {
  const drop=document.createElement('i');
